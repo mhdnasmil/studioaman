@@ -102,6 +102,20 @@ body{
     padding: 10px 12px;
     }
   }
+ 
+ /* services Section */
+ .services{
+  height: 1346px;
+  width: 100%;
+  background-color: #0923a9;
+ }
+ /* Social Section */
+.social{
+  height: 692px;
+  width: 100%;
+  background-color: aqua;
+}
+ 
 
 
 /* Footer Section */
