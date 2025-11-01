@@ -146,7 +146,7 @@ body, html {
  .services{
   height: 1346px;
   width: 100%;
-  background-color: #0923a9;
+  background-color: wheat;
  }
 
  /* Social Section */
@@ -155,6 +155,55 @@ body, html {
   width: 100%;
   background-color: #F8F8F8;
 }
+.social-section {
+  background: #fafafa;
+}
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  letter-spacing: 0.5px;
+}
+
+.social-card {
+  background: #fff;
+  padding: 28px;
+  border-radius: 12px;
+  border: 1px solid #e9e9e9;
+  min-height: 160px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.social-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+}
+
+.icon-circle {
+  background: #0040ff;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle img {
+  filter: brightness(0) invert(1);
+}
+
+.primary-card {
+  background: #0040ff !important;
+  border: none !important;
+}
+
+.primary-card .arrow {
+  font-size: 22px;
+}
+
  
 /* Footer Section */
 .footer {
