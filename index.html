@@ -11,25 +11,45 @@
 </head>
 <body>
 
-  <!-- hero section -->
-  <section id="header" class="hero">
-  <video autoplay muted loop playsinline class="background-video">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top custom-nav">
+  <div class="container-fluid px-4">
+
+    <!-- LOGO -->
+    <a class="navbar-brand" href="#">
+      <img src="asssets/sa(transp.w).png" alt="Studio Aman Logo" class="logo-img">
+    </a>
+
+    <!-- MENU TEXT instead of hamburger -->
+    <button class="navbar-toggler border-0 menu-toggle-text" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+      MENU
+    </button>
+
+    <!-- NAV LINKS -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+      <ul class="navbar-nav gap-4 text-center">
+        <li class="nav-item"><a class="nav-link text-white" href="#">Projects</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Services</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero-section">
+  <video autoplay muted loop playsinline class="bg-video">
     <source src="asssets/headervideo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
   </video>
 
-  <div class="overlay">
-    <div class="navbar">
-      <img src="asssets/sa(transp.w).png" alt="Logo" class="logo">
-      <nav class="nav-links">
-        <a href="#">Projects</a>
-        <a href="#">Services</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </nav>
-    </div>
+  <div class="hero-content text-center text-white">
+    <h1>Creating story-driven intentional<br>brand identities.</h1>
+    <button class="btn btn-outline-light mt-3 px-4 py-2 rounded-pill">INQUIRE</button>
   </div>
 </section>
+
 
   <!-- projects section -->
 <div class="container py-4">
@@ -85,13 +105,12 @@
 
 <!-- services section -->
  <div class="services">
+  
 
  </div>
 
 <!-- social section -->
  <div class="social"></div>
-
-
 
 
 <!-- footer section -->
@@ -126,5 +145,6 @@
 
 <!-- Bootstrap Bundle JS CDN -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

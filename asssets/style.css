@@ -1,19 +1,73 @@
-body{
-    margin: 0;
-    background-color: #fff;
-    font-family: 'Poppins', sans-serif;
+/* Global */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
-/* Hero Section */
+/* Fixed Navbar Height */
+.custom-nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  z-index: 10;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
 
-.hero {
+/* Logo control */
+.logo-img {
+  height: 60px; /* adjust this only */
+  width: auto;
+  object-fit: contain;
+}
+
+/* Desktop Menu text style */
+.navbar-nav .nav-link {
+  font-size: 18px; /* menu text size */
+  font-weight: 400;
+}
+
+/* Mobile MENU text button */
+.menu-toggle-text {
+  font-size: 18px;
+  color: white;
+  background: transparent;
+  padding: 5px 10px;
+    border: none;
+
+}
+.navbar-toggler {
+  color: #fff !important;
+}
+
+/* Remove default hamburger icon spacing */
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Mobile dropdown look */
+@media (max-width: 991px) {
+  #navbarMenu {
+    background: rgba(0,0,0,0.85);
+    padding: 20px;
+    border-radius: 6px;
+    color: white;
+  }
+}
+
+/* HERO SECTION */
+.hero-section {
   position: relative;
-  height: 790px;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
 }
 
-.background-video {
+/* Background Video */
+.bg-video {
   position: absolute;
   top: 0;
   left: 0;
@@ -23,44 +77,29 @@ body{
   z-index: -1;
 }
 
-.overlay {
-  height: 100%;
-  z-index: 1;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
+/* Hero Text */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
+  max-width: 700px;
+  padding: 20px;
 }
 
-
-.navbar .logo {
-  height: 10%;
-  width: 10%;
-  position: relative;
-  left: 100px;
+.hero-content h1 {
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 500;
 }
 
-
-.navbar nav a {
-  margin: 0 20px;
-  padding-left: 50px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 20px;
-  color: #fff;
-  
+@media (min-width: 768px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
 }
-
-.navbar nav a:hover {
-  color: white;
-}
-
 /* Projects Section */
 .project-card {
   position: relative;
@@ -109,15 +148,14 @@ body{
   width: 100%;
   background-color: #0923a9;
  }
+
  /* Social Section */
 .social{
   height: 692px;
   width: 100%;
-  background-color: aqua;
+  background-color: #F8F8F8;
 }
  
-
-
 /* Footer Section */
 .footer {
   background: #1327BD;
