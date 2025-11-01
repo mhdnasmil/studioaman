@@ -146,8 +146,88 @@ body, html {
  .services{
   height: 1346px;
   width: 100%;
-  background-color: wheat;
  }
+ /* Wrapper controls full section height */
+.services-section-wrapper {
+  height: 1346px;
+  width: 100%;
+  display: flex;
+}
+
+/* Equal height rows inside */
+.service-box {
+  flex: 1;
+  min-height: 0;
+  height: 164px;
+  border: 10px solid #ddd;
+  margin-bottom: 20px;
+}
+
+/* Styling */
+.services-title {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+
+.browse-all, .lets-talk {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+
+.services-subtext {
+  font-size: 16px;
+  color: #444;
+}
+
+.accordion-button {
+  font-size: 18px;
+  padding: 20px;
+  background: #fff;
+  display: flex;
+  gap: 8px;
+}
+
+/* Arrow rotation */
+.accordion-button::after {
+  transform: rotate(90deg);
+}
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(0deg);
+}
+
+.service-index {
+  font-weight: 600;
+  color: #000;
+}
+
+/* Responsive text & height behavior */
+@media (max-width: 992px) {
+  .accordion-button { font-size: 16px; padding: 16px; }
+}
+
+@media (max-width: 768px) {
+  .services-section-wrapper {
+    height: auto;  /* let it grow on mobile */
+  }
+  .accordion-button {
+    font-size: 15px;
+    padding: 14px;
+  }
+  .services-title { font-size: 20px; }
+  .services-subtext { font-size: 14px; }
+}
+
+@media (max-width: 576px) {
+  .accordion-button {
+    font-size: 14px;
+    padding: 12px;
+  }
+  .services-title { font-size: 18px; }
+}
+
 
  /* Social Section */
 .social{
