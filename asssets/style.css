@@ -102,6 +102,9 @@ body, html {
 }
 
 /* Projects Section */
+.project-title{
+  font-family: "Playfair Display", serif;
+}
 .proj-box {
   border-radius: 8px;
   overflow: hidden;
@@ -148,14 +151,12 @@ body, html {
   height: 1346px;
   width: 100%;
  }
- /* Wrapper controls full section height */
 .services-section-wrapper {
-  
+
   width: 100%;
   display: flex;
 }
 
-/* Equal height rows inside */
 .service-box {
   flex: 1;
   min-height: 0;
@@ -164,11 +165,12 @@ body, html {
   margin-bottom: 20px;
 }
 
-/* Styling */
 .services-title {
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 24px;
+  font-family: "Playfair Display", serif;
+
 }
 
 .browse-all, .lets-talk {
@@ -211,7 +213,7 @@ body, html {
 
 @media (max-width: 768px) {
   .services-section-wrapper {
-    height: auto;  /* let it grow on mobile */
+    height: auto;  
   }
   .accordion-button {
     font-size: 15px;
