@@ -234,9 +234,9 @@ body, html {
 
  /* Social Section */
 .social{
-  height: 692px;
   width: 100%;
   background-color: #F8F8F8;
+  padding-bottom: 50px; 
 }
 .social-section {
   background: #fafafa;
